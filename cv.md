@@ -50,3 +50,14 @@ export default checkTextInputs;
 #### December 2020 - present
 
 **Tula, SGED(Event Design)**
+
+## **Education**
+
+TGMK named after Nikita Demidov with honours degree (2014 - 2018),
+
+Tula State University, faculty: information security (2018 - present)
+
+## **English Level**
+
+Pre-Intermediate  
+I use English at my job, read documentation, write description, comment code :)
