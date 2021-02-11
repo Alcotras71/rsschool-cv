@@ -45,3 +45,8 @@ const checkTextInputs = (selector) => {
 
 export default checkTextInputs;
 ```
+
+##  **Work Experience**
+#### December 2020 - present
+
+**Tula, SGED(Event Design)**
