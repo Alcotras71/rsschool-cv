@@ -28,11 +28,11 @@
             <a class="navbar__link" href="#about"><h2>About</h2></a>
           </li>
           <li class="navbar__item">
-            <i class="navbar__icon fa fa-briefcase"></i>
-            <a class="navbar__link" href="#"><h2>Education</h2></a>
+            <i class="navbar__icon fas fa-graduation-cap"></i>
+            <a class="navbar__link" href="#education"><h2>Education</h2></a>
           </li>
           <li class="navbar__item">
-            <i class="navbar__icon fa fa-envelope-open"></i>
+            <i class="navbar__icon fas fa-id-card"></i>
             <a class="navbar__link" href="#"><h2>Contacts</h2></a>
           </li>
         </ul>
@@ -59,7 +59,7 @@
             </div>
           </div>
           <div class="about__summary summary">
-            <h2 class="summary__title">Summary</h2>
+            <h2 class="summary__title"><i class="fas fa-bookmark"></i> Summary</h2>
             <p class="summary__text">
               Hi, my name is Andrey and I am a junior Frontend-developer in a
               small web studio. Always for HTML coding i use Gulp, Scss, Pug. On
@@ -73,48 +73,85 @@
           </div>
         </section>
         <!-- end section About -->
-				<!-- ********************************************** -->
-				<!-- start section Education -->
+        <!-- ********************************************** -->
+        <!-- start section Education -->
         <section class="education" id="education">
           <div class="education__skills skills">
             <div class="skills__technical">
-							<div class="skills__title">
-
-							</div>
-							<ul class="skills__list">
-
-							</ul>
-						</div>
+              <div class="skills__title">
+                <h3 class="text-stroke gold"><i class="fas fa-cogs"></i> Technical Skills</h3>
+              </div>
+              <ul class="skills__list">
+                <li>HTML5, CSS3, JavaScript, some PHP7</li>
+                <li>frameworks: Vue, VueX, Nuxt.js, React, Redux</li>
+                <li>Scss, Pug</li>
+                <li>Wordpress</li>
+                <li>command line, npm, npx</li>
+                <li>Git</li>
+                <li>Figma, AdobeXD, Avocode</li>
+                <li>Webpack, Gulp</li>
+                <li>Code Editor: Visual Studio Code, WebStorm</li>
+                <li>Rest.API</li>
+              </ul>
+            </div>
             <div class="skills__code">
-							<div class="skills__title">
+              <div class="skills__title">
+                <h3><i class="fas fa-code"></i> Code examples</h3>
+              </div>
+              <div class="skills__text">
+                <p>Github profile: https://github.com/Alcotras71</p>
+                <p>small validation module on native JS</p>
+              </div>
+              <div class="skills__code-code">
+								<pre>
+									<code>
+const checkTextInputs = (selector) => {
+	const txtInputs = document.querySelectorAll(selector);
 
-							</div>
-							<div class="skills__code-text">
+	txtInputs.forEach(input => {
+		input.addEventListener('keypress', function(e) {
+			if (e.key.match(/[^а-яё 0-9]/ig)) {
+				e.preventDefault();
+			}
+		});
+	});
 
-							</div>
-							<div class="skills__code-code">
+};
 
+export default checkTextInputs;
+									</code>
+								</pre>
 							</div>
-						</div>
+            </div>
           </div>
-					<div class="education__experience experience">
-						<div class="experience__work">
-							<div class="experience__title"></div>
-							<div class="experience__text"></div>
-						</div>
-						<div class="experience__schooling">
-							<div class="experience__title"></div>
-							<div class="experience__text"></div>
-						</div>
-						<div class="experience__english-level">
-							<div class="experience__title"></div>
-							<div class="experience__text"></div>
-						</div>
-					</div>
+          <div class="education__experience experience">
+            <div class="experience__work">
+              <div class="skills__title"><h3><i class="fas fa-business-time"></i> Work Experience</h3></div>
+              <div class="skills__text">
+								<p>December 2020 - present</p>
+								<p>Tula, SGED(Event Design)</p>
+							</div>
+            </div>
+            <div class="experience__schooling">
+              <div class="skills__title"><h3><i class="fas fa-book-reader"></i> Education</h3></div>
+              <div class="skills__text">
+								<p>TGMK named after Nikita Demidov with honours degree (2014 - 2018),</p>
+								<p>Tula State University, faculty: information security (2018 - present)</p>
+							</div>
+            </div>
+            <div class="experience__english-level">
+              <div class="skills__title"><h3><i class="fas fa-graduation-cap"></i> English Level</h3></div>
+              <div class="skills__text">
+								<p>Pre-Intermediate</p>
+								<p>I use English at my job, read documentation, write description, comment code :)</p>
+							</div>
+            </div>
+          </div>
         </section>
-				<!-- end section Education -->
+        <!-- end section Education -->
       </main>
     </div>
+
 
     <script src="js/script.js"></script>
   </body>
