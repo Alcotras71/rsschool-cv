@@ -16,6 +16,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <!-- <link rel="stylesheet" href="css/libs/animate.min.css"> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -33,7 +34,7 @@
           </li>
           <li class="navbar__item">
             <i class="navbar__icon fas fa-id-card"></i>
-            <a class="navbar__link" href="#"><h2>Contacts</h2></a>
+            <a class="navbar__link" href="#contacts"><h2>Contacts</h2></a>
           </li>
         </ul>
       </nav>
@@ -59,7 +60,9 @@
             </div>
           </div>
           <div class="about__summary summary">
-            <h2 class="summary__title"><i class="fas fa-bookmark"></i> Summary</h2>
+            <h2 class="summary__title">
+              <i class="fas fa-bookmark"></i> Summary
+            </h2>
             <p class="summary__text">
               Hi, my name is Andrey and I am a junior Frontend-developer in a
               small web studio. Always for HTML coding i use Gulp, Scss, Pug. On
@@ -77,9 +80,11 @@
         <!-- start section Education -->
         <section class="education" id="education">
           <div class="education__skills skills">
-            <div class="skills__technical">
+            <div class="skills__technical" class="" data-wow-offset="300">
               <div class="skills__title">
-                <h3 class="text-stroke gold"><i class="fas fa-cogs"></i> Technical Skills</h3>
+                <h3 class="text-stroke gold">
+                  <i class="fas fa-cogs"></i> Technical Skills
+                </h3>
               </div>
               <ul class="skills__list">
                 <li>HTML5, CSS3, JavaScript, some PHP7</li>
@@ -99,11 +104,16 @@
                 <h3><i class="fas fa-code"></i> Code examples</h3>
               </div>
               <div class="skills__text">
-                <p>Github profile: https://github.com/Alcotras71</p>
+                <p>
+                  Github profile:
+                  <a href="https://github.com/Alcotras71" target="_blank"
+                    >https://github.com/Alcotras71</a
+                  >
+                </p>
                 <p>small validation module on native JS</p>
               </div>
               <div class="skills__code-code">
-								<pre>
+                <pre>
 									<code>
 const checkTextInputs = (selector) => {
 	const txtInputs = document.querySelectorAll(selector);
@@ -121,38 +131,109 @@ const checkTextInputs = (selector) => {
 export default checkTextInputs;
 									</code>
 								</pre>
-							</div>
+              </div>
             </div>
           </div>
           <div class="education__experience experience">
             <div class="experience__work">
-              <div class="skills__title"><h3><i class="fas fa-business-time"></i> Work Experience</h3></div>
+              <div class="skills__title">
+                <h3><i class="fas fa-business-time"></i> Work Experience</h3>
+              </div>
               <div class="skills__text">
-								<p>December 2020 - present</p>
-								<p>Tula, SGED(Event Design)</p>
-							</div>
+                <p>December 2020 - present</p>
+                <p>Tula, SGED(Event Design)</p>
+              </div>
             </div>
             <div class="experience__schooling">
-              <div class="skills__title"><h3><i class="fas fa-book-reader"></i> Education</h3></div>
+              <div class="skills__title">
+                <h3><i class="fas fa-book-reader"></i> Education</h3>
+              </div>
               <div class="skills__text">
-								<p>TGMK named after Nikita Demidov with honours degree (2014 - 2018),</p>
-								<p>Tula State University, faculty: information security (2018 - present)</p>
-							</div>
+                <p>
+                  TGMK named after Nikita Demidov with honours degree (2014 -
+                  2018),
+                </p>
+                <p>
+                  Tula State University, faculty: information security (2018 -
+                  present)
+                </p>
+              </div>
             </div>
             <div class="experience__english-level">
-              <div class="skills__title"><h3><i class="fas fa-graduation-cap"></i> English Level</h3></div>
+              <div class="skills__title">
+                <h3><i class="fas fa-graduation-cap"></i> English Level</h3>
+              </div>
               <div class="skills__text">
-								<p>Pre-Intermediate</p>
-								<p>I use English at my job, read documentation, write description, comment code :)</p>
-							</div>
+                <p>Pre-Intermediate</p>
+                <p>
+                  I use English at my job, read documentation, write
+                  description, comment code :)
+                </p>
+              </div>
             </div>
           </div>
         </section>
         <!-- end section Education -->
+        <!-- ********************************************** -->
+        <!-- start section Contacts -->
+        <section class="contacts" id="contacts">
+          <h3 class="summary__title">Contacts</h3>
+          <div class="contacts__variation">
+            <div class="contacts__left">
+              <div class="contacts__block mail">
+                <div class="contacts__icon">
+                  <i class="fas fa-envelope-open"></i>
+                </div>
+                <div class="contacts__link">
+                  <a href="mailto:AimDragMan2@yandex.ru">
+                    <p class="contacts__link_grey">Mail me</p>
+                    <p>AimDragMan2@yandex.ru</p>
+                  </a>
+                </div>
+              </div>
+              <div class="contacts__block tel">
+                <div class="contacts__icon">
+                  <i class="fas fa-phone-square-alt"></i>
+                </div>
+                <div class="contacts__link">
+                  <a href="tel:+79632232137">
+                    <p class="contacts__link_grey">Call me</p>
+                    <p>AimDragMan2@yandex.ru</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__messangers">
+              <div class="contacts__block telegram">
+                <div class="contacts__icon">
+                  <i class="fab fa-telegram"></i>
+                </div>
+                <div class="contacts__link">
+                  <a href="mailto:AimDragMan2@yandex.ru">
+                    <p class="contacts__link_grey">Message me</p>
+                    <p>AimDragMan2@yandex.ru</p>
+                  </a>
+                </div>
+              </div>
+              <div class="contacts__block discord">
+                <div class="contacts__icon">
+                  <i class="fab fa-discord"></i>
+                </div>
+                <div class="contacts__link">
+                  <a href="mailto:AimDragMan2@yandex.ru">
+                    <p class="contacts__link_grey">Watch at me</p>
+                    <p>AimDragMan2@yandex.ru</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end section Contacts -->
       </main>
     </div>
 
-
+		<!-- <script src="js/libs/wow.min.js"></script> -->
     <script src="js/script.js"></script>
   </body>
 </html>

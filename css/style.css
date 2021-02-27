@@ -83,7 +83,7 @@ h6 {
   font-weight: 500;
   line-height: 1.6;
   position: relative;
-  background: linear-gradient(rgba(17,17,17, 1) 0%, rgba(17, 17, 17, 0.8) 20%, rgba(17, 17, 17, 0.8) 40%, rgba(17, 17, 17, 1) 100%);
+  background: linear-gradient(rgba(17,17,17, 1) 0%, rgba(17, 17, 17, 0.8) 20%, rgba(17, 17, 17, 0.9) 40%, rgba(17, 17, 17, 1) 100%);
 }
 
 .container {
@@ -95,13 +95,18 @@ h6 {
 
 .bg-block {
   position: absolute;
-  height: 225vh;
+  height: 2400px;
   width: 100%;
   transform: rotate(-15deg);
   left: -83%;
   top: -50%;
   background-color: #ffb400;
   z-index: 0;
+}
+@media(max-width: 768px) {
+	.bg-block{
+		display: none;
+	}
 }
 
 .text-stroke {
@@ -119,7 +124,7 @@ h6 {
   position: fixed;
   right: 30px;
   bottom: 0;
-  z-index: 3;
+  z-index: 100;
   display: flex;
   align-items: center;
   height: calc(100vh - 200px);
@@ -185,6 +190,11 @@ h6 {
 .navbar__item:hover > .navbar__icon {
   color: #fff;
 }
+
+@media(max-width: 768px) {
+
+}
+
 /*** end Header ***/
 
 /*? About *****/
@@ -193,7 +203,6 @@ h6 {
   position: relative;
   display: flex;
   align-items: center;
-  height: 100vh;
   z-index: 5;
 }
 
@@ -206,23 +215,23 @@ h6 {
 }
 
 .about__photo img {
-  height: calc(50vw - 110px);
+  height: calc(100vh - 200px);
   box-shadow: 0 0 7px rgb(0 0 0 / 90%);
   border-radius: 15px;
 }
 .about__age-gender {
-  font-size: 2.5vw;
+  font-size: 2.6vw;
   text-align: right;
 }
 
 /* summary */
 .summary {
-  margin-left: 8vw;
-  font-size: 1.2vw;
+  margin-left: 150px;
+  font-size: 1.5vw;
   padding-right: 100px;
 }
 .summary__title {
-  font-size: 2.8vw;
+  font-size: 3vw;
   color: #ffb400;
   font-weight: 700;
 }
@@ -231,12 +240,12 @@ h6 {
 /*? Education ******/
 .education {
   align-items: normal;
-	margin-top: 5vh;
+	margin-top: 80px;
 	justify-content: space-between;
 }
 
 .skills{
-	margin-right: 5vw;
+	margin-right: 170px;
 }
 
 .skills__title {
@@ -245,11 +254,18 @@ h6 {
   font-weight: 700;
 }
 .skills__text{
-	font-size: 1vw;
+	font-size: 1.2vw;
+}
+.skills__text a {
+	color: #fff;
+	transition: color 0.5s ease;
+}
+.skills__text a:hover {
+	color: #ffb400;
 }
 
 .skills__list {
-  font-size: 1.1vw;
+  font-size: 1.3vw;
 
 }
 .skills__list li:before {
@@ -259,17 +275,58 @@ h6 {
 	padding-right: 5px;
 }
 .skills__code{
-	margin-top: 3vh;
+	margin-top: 50px;
 }
 .skills__code-code {
+	margin-top: 1vh;
 	background: rgba(255, 180, 0, 0.6);
 	padding-left: 50px;
 	margin-left: -50px;
-	font-size: 1vw;
+	font-size: 0.9vw;
 	border-radius: 20%;
 }
 
 .experience__schooling,
 .experience__english-level{
-	margin-top: 10vh;
+	margin-top: 100px;
+}
+/*? end Education ******/
+
+/*? Contacts ********/
+.contacts {
+	margin-top: 90px;
+	padding-bottom: 150px;
+}
+.contacts > .summary__title {
+	text-align: center;
+	margin-top: 30px;
+}
+.contacts__variation{
+	display: flex;
+	margin: 0 auto;
+	max-width: 1000px;
+	justify-content: space-between;
+}
+.contacts__block{
+	display: flex;
+	margin-top: 50px;
+}
+.contacts__icon{
+	padding-right: 20px;
+	color:#ffb400;
+	font-size: 3.3vw;
+}
+
+.contacts__link a{
+	color: #fff;
+	font-size: 1.6vw;
+	transition: color 0.5s ease;
+}
+.contacts__link a:hover {
+	color:#ffb400;
+}
+.contacts__link_grey{
+	font-size: 1.8vw;
+	opacity: .5;
+	text-transform: uppercase;
 }

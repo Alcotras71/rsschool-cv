@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   const anchors = document.querySelectorAll('a[href*="#"]');
 
-  for (let anchor of anchors) {
-    anchor.addEventListener("click", function (e) {
+  anchors.forEach((anchor) => {
+    anchor.addEventListener("click", (e) => {
       e.preventDefault();
 
       const blockID = anchor.getAttribute("href").substr(1);
@@ -22,5 +22,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         block: "start",
       });
     });
-  }
+  });
+
+	// new WOW().init();
 });
