@@ -16,13 +16,16 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="css/libs/animate.min.css"> -->
+    <link rel="stylesheet" href="css/libs/animate.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- start Header -->
     <header class="header">
-      <nav class="header__navbar navbar">
+      <nav
+        class="header__navbar navbar wow animate__animated animate__fadeInDown"
+        data-wow-delay="1.1s"
+      >
         <ul class="navbar__menu">
           <li class="navbar__item active">
             <i class="navbar__icon fa fa-user"></i>
@@ -46,23 +49,36 @@
         <!-- start section About -->
         <section class="about" id="about">
           <div class="about__info">
-            <div class="about__fullName">
+            <div
+              class="about__fullName wow animate__animated animate__fadeInLeft"
+              data-wow-delay=".1s"
+            >
               <h1>Andrey <span class="text-stroke">Alekseev</span></h1>
             </div>
-            <div class="about__photo">
+            <div
+              class="about__photo wow animate__animated animate__zoomIn"
+              data-wow-delay=".3s"
+            >
               <img
                 alt="my_avatar"
                 src="https://sun9-61.userapi.com/impf/c830400/v830400269/132458/n7axDEe3mg0.jpg?size=720x960&quality=96&proxy=1&sign=29d85d4bc02ecbd936ea7e2793009bf0&type=album"
               />
             </div>
-            <div class="about__age-gender">
+            <div
+              class="about__age-gender wow animate__animated animate__fadeInUp"
+              data-wow-delay=".7s"
+            >
               male, <span class="text-stroke">22</span>
             </div>
           </div>
-          <div class="about__summary summary">
-            <h2 class="summary__title">
-              <i class="fas fa-bookmark"></i> Summary
-            </h2>
+          <div
+            class="about__summary summary wow animate__animated animate__zoomIn"
+            data-wow-delay=".9s"
+          >
+            <div class="summary__title">
+              <h2><i class="fas fa-bookmark"></i> Summary</h2>
+              <span class="bg__title">Summary</span>
+            </div>
             <p class="summary__text">
               Hi, my name is Andrey and I am a junior Frontend-developer in a
               small web studio. Always for HTML coding i use Gulp, Scss, Pug. On
@@ -80,11 +96,15 @@
         <!-- start section Education -->
         <section class="education" id="education">
           <div class="education__skills skills">
-            <div class="skills__technical" class="" data-wow-offset="300">
+            <div
+              class="skills__technical wow animate__animated animate__fadeInLeft"
+              data-wow-offset="300"
+            >
               <div class="skills__title">
                 <h3 class="text-stroke gold">
                   <i class="fas fa-cogs"></i> Technical Skills
                 </h3>
+                <span class="bg__title">Technical</span>
               </div>
               <ul class="skills__list">
                 <li>HTML5, CSS3, JavaScript, some PHP7</li>
@@ -99,9 +119,13 @@
                 <li>Rest.API</li>
               </ul>
             </div>
-            <div class="skills__code">
+            <div
+              class="skills__code wow animate__animated animate__fadeInLeft"
+              data-wow-offset="400"
+            >
               <div class="skills__title">
                 <h3><i class="fas fa-code"></i> Code examples</h3>
+                <span class="bg__title">Code</span>
               </div>
               <div class="skills__text">
                 <p>
@@ -112,7 +136,11 @@
                 </p>
                 <p>small validation module on native JS</p>
               </div>
-              <div class="skills__code-code">
+              <div
+                class="skills__code-code wow animate__animated animate__bounceIn"
+                data-wow-offset="300"
+                data-wow-delay=".8s"
+              >
                 <pre>
 									<code>
 const checkTextInputs = (selector) => {
@@ -135,18 +163,27 @@ export default checkTextInputs;
             </div>
           </div>
           <div class="education__experience experience">
-            <div class="experience__work">
+            <div
+              class="experience__work wow animate__animated animate__fadeInRight"
+              data-wow-offset="300"
+            >
               <div class="skills__title">
                 <h3><i class="fas fa-business-time"></i> Work Experience</h3>
+                <span class="bg__title right">Work</span>
               </div>
               <div class="skills__text">
                 <p>December 2020 - present</p>
                 <p>Tula, SGED(Event Design)</p>
               </div>
             </div>
-            <div class="experience__schooling">
+            <div
+              class="experience__schooling wow animate__animated animate__fadeInRight"
+              data-wow-offset="300"
+              data-wow-delay="0.4s"
+            >
               <div class="skills__title">
                 <h3><i class="fas fa-book-reader"></i> Education</h3>
+                <span class="bg__title right">Education</span>
               </div>
               <div class="skills__text">
                 <p>
@@ -159,9 +196,14 @@ export default checkTextInputs;
                 </p>
               </div>
             </div>
-            <div class="experience__english-level">
+            <div
+              class="experience__english-level wow animate__animated animate__fadeInRight"
+              data-wow-offset="300"
+              data-wow-delay="0.8s"
+            >
               <div class="skills__title">
                 <h3><i class="fas fa-graduation-cap"></i> English Level</h3>
+                <span class="bg__title right without-stroke">English</span>
               </div>
               <div class="skills__text">
                 <p>Pre-Intermediate</p>
@@ -177,10 +219,20 @@ export default checkTextInputs;
         <!-- ********************************************** -->
         <!-- start section Contacts -->
         <section class="contacts" id="contacts">
-          <h3 class="summary__title">Contacts</h3>
+          <div
+            class="skills__title wow animate__animated animate__jackInTheBox center"
+            data-wow-offset="300"
+          >
+            <h3>Contacts</h3>
+            <span class="bg__title center">Contacts</span>
+          </div>
           <div class="contacts__variation">
             <div class="contacts__left">
-              <div class="contacts__block mail">
+              <div
+                class="contacts__block mail wow animate__animated animate__fadeInLeft"
+                data-wow-offset="200"
+                data-wow-delay="0.2s"
+              >
                 <div class="contacts__icon">
                   <i class="fas fa-envelope-open"></i>
                 </div>
@@ -191,38 +243,50 @@ export default checkTextInputs;
                   </a>
                 </div>
               </div>
-              <div class="contacts__block tel">
+              <div
+                class="contacts__block tel wow animate__animated animate__fadeInLeft"
+                data-wow-offset="200"
+                data-wow-delay="0.4s"
+              >
                 <div class="contacts__icon">
                   <i class="fas fa-phone-square-alt"></i>
                 </div>
                 <div class="contacts__link">
                   <a href="tel:+79632232137">
                     <p class="contacts__link_grey">Call me</p>
-                    <p>AimDragMan2@yandex.ru</p>
+                    <p>8(963)-223-21-37</p>
                   </a>
                 </div>
               </div>
             </div>
             <div class="contacts__messangers">
-              <div class="contacts__block telegram">
+              <div
+                class="contacts__block telegram wow animate__animated animate__fadeInRight"
+                data-wow-offset="200"
+                data-wow-delay="0.6s"
+              >
                 <div class="contacts__icon">
                   <i class="fab fa-telegram"></i>
                 </div>
                 <div class="contacts__link">
-                  <a href="mailto:AimDragMan2@yandex.ru">
+                  <a href="https://t.me/Alcotras">
                     <p class="contacts__link_grey">Message me</p>
-                    <p>AimDragMan2@yandex.ru</p>
+                    <p>@Alcotras</p>
                   </a>
                 </div>
               </div>
-              <div class="contacts__block discord">
+              <div
+                class="contacts__block discord wow animate__animated animate__fadeInRight"
+                data-wow-offset="200"
+                data-wow-delay="0.8s"
+              >
                 <div class="contacts__icon">
                   <i class="fab fa-discord"></i>
                 </div>
                 <div class="contacts__link">
-                  <a href="mailto:AimDragMan2@yandex.ru">
+                  <a href="#">
                     <p class="contacts__link_grey">Watch at me</p>
-                    <p>AimDragMan2@yandex.ru</p>
+                    <p>Alcotras#2534</p>
                   </a>
                 </div>
               </div>
@@ -233,7 +297,7 @@ export default checkTextInputs;
       </main>
     </div>
 
-		<!-- <script src="js/libs/wow.min.js"></script> -->
+    <script src="js/libs/wow.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

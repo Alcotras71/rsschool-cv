@@ -24,5 +24,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   });
 
-	// new WOW().init();
+	new WOW().init();
 });
