@@ -358,3 +358,16 @@ h6 {
   opacity: 0.5;
   text-transform: uppercase;
 }
+
+
+::-webkit-scrollbar { /* 1 - скроллбар */
+	width: 10px;
+	background-color: #111;
+}
+
+::-webkit-scrollbar-thumb { /* 5 - ползунок */
+	border-radius: 2px;
+	background: #ffb400;
+
+}
+
