@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     button.addEventListener("click", (e) => {
       menuButtons.forEach((button) => button.classList.remove("active"));
       e.target.parentElement.parentElement.classList.add("active");
+			e.target.classList.add("active");
     });
   });
 
@@ -25,4 +26,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 
 	new WOW().init();
+
+	if(window.matchMedia('(max-width: 768px)').matches){
+		const fadeInRight = document.querySelectorAll('.animate__fadeInRight');
+
+		fadeInRight.forEach(elem => {
+			elem.classList.remove('animate__fadeInRight');
+			elem.classList.add('animate__fadeInLeft')
+		});
+	}
+
 });
