@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html,css & git</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/libs/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- start Aside -->
+    <aside class="aside">
+      <nav
+        class="header__navbar navbar wow animate__animated animate__fadeInDown"
+        data-wow-delay="1.1s"
+      >
+        <ul class="navbar__menu">
+          <li class="navbar__item active">
+            <i class="navbar__icon fa fa-user"></i>
+            <a class="navbar__link" href="#about"><h2>About</h2></a>
+          </li>
+          <li class="navbar__item">
+            <i class="navbar__icon fas fa-graduation-cap"></i>
+            <a class="navbar__link" href="#education"><h2>Education</h2></a>
+          </li>
+          <li class="navbar__item">
+            <i class="navbar__icon fas fa-id-card"></i>
+            <a class="navbar__link" href="#contacts"><h2>Contacts</h2></a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- end Aside -->
+    <div class="wrapper">
+      <main class="container">
+        <div class="bg-block"></div>
+        <!-- start section About -->
+        <section class="about" id="about">
+          <div class="about__info">
+            <div
+              class="about__fullName wow animate__animated animate__fadeInLeft"
+              data-wow-delay=".1s"
+            >
+              <h1>Andrey <span class="text-stroke">Alekseev</span></h1>
+            </div>
+            <div
+              class="about__photo wow animate__animated animate__zoomIn"
+              data-wow-delay=".3s"
+            >
+              <figure>
+                <img alt="my_avatar" src="img/avatar.jpg" />
+                <figcaption
+                  class="about__age-gender wow animate__animated animate__fadeInUp"
+                  data-wow-delay=".7s"
+                >
+                  male, <span class="text-stroke">22</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div
+            class="about__summary summary wow animate__animated animate__zoomIn"
+            data-wow-delay=".9s"
+          >
+            <div class="summary__title">
+              <h2><i class="fas fa-bookmark"></i> Summary</h2>
+              <span class="bg__title without-stroke">Summary</span>
+            </div>
+            <article class="summary__text">
+              Hi, my name is Andrey and I am a junior Frontend-developer in a
+              small web studio. Always for HTML coding i use Gulp, Scss, Pug. On
+              my work i have different tasks like work with cms Wordpress, to
+              right code on native JavaScript or use different libraries for
+              work with canvas and WebGL. I really want to upgrade my skills,
+              because I’m really love my job and that course is a chance to free
+              boost my personal skills, to feel more fun and comfort with my
+              job.
+            </article>
+          </div>
+        </section>
+        <!-- end section About -->
+        <!-- ********************************************** -->
+        <!-- start section Education -->
+        <section class="education" id="education">
+          <div class="education__skills skills">
+            <div
+              class="skills__technical wow animate__animated animate__fadeInLeft"
+              data-wow-offset="300"
+            >
+              <div class="skills__title">
+                <h3 class="text-stroke gold">
+                  <i class="fas fa-cogs"></i> Technical Skills
+                </h3>
+                <span class="bg__title bg__title-stroke">Technical</span>
+              </div>
+              <ul class="skills__list">
+                <li>HTML5, CSS3, JavaScript, some PHP7</li>
+                <li>frameworks: Vue, VueX, Nuxt.js, React, Redux</li>
+                <li>Scss, Pug</li>
+                <li>Wordpress</li>
+                <li>command line, npm, npx</li>
+                <li>Git</li>
+                <li>Figma, AdobeXD, Avocode</li>
+                <li>Webpack, Gulp</li>
+                <li>Code Editor: Visual Studio Code, WebStorm</li>
+                <li>Rest.API</li>
+              </ul>
+            </div>
+            <div
+              class="skills__code wow animate__animated animate__fadeInLeft"
+              data-wow-offset="400"
+            >
+              <div class="skills__title">
+                <h3 class="text-stroke gold">
+                  <i class="fas fa-code"></i> Code examples
+                </h3>
+                <span class="bg__title bg__title-stroke">Code</span>
+              </div>
+              <div class="skills__text">
+                <p>
+                  Github profile:
+                  <a href="https://github.com/Alcotras71" target="_blank"
+                    >https://github.com/Alcotras71</a
+                  >
+                </p>
+                <p class="skills__text-hidden">
+                  small validation module on native JS
+                </p>
+              </div>
+              <article
+                class="skills__code-code wow animate__animated animate__bounceIn"
+                data-wow-offset="300"
+                data-wow-delay=".8s"
+              >
+                <pre>
+									<code>
+const checkTextInputs = (selector) => {
+	const txtInputs = document.querySelectorAll(selector);
+
+	txtInputs.forEach(input => {
+		input.addEventListener('keypress', function(e) {
+			if (e.key.match(/[^а-яё 0-9]/ig)) {
+				e.preventDefault();
+			}
+		});
+	});
+
+};
+
+export default checkTextInputs;
+									</code>
+								</pre>
+              </article>
+            </div>
+          </div>
+          <div class="education__experience experience">
+            <div
+              class="experience__work wow animate__animated animate__fadeInRight"
+              data-wow-offset="300"
+            >
+              <div class="skills__title">
+                <h3><i class="fas fa-business-time"></i> Work Experience</h3>
+                <span class="bg__title">Work</span>
+              </div>
+              <div class="skills__text">
+                <p>December 2020 - present</p>
+                <p>Tula, SGED(Event Design)</p>
+              </div>
+            </div>
+            <div
+              class="experience__schooling wow animate__animated animate__fadeInRight"
+              data-wow-offset="300"
+              data-wow-delay="0.4s"
+            >
+              <div class="skills__title">
+                <h3><i class="fas fa-book-reader"></i> Education</h3>
+                <span class="bg__title">Education</span>
+              </div>
+              <div class="skills__text">
+                <p>
+                  TGMK named after Nikita Demidov with honours degree (2014 -
+                  2018),
+                </p>
+                <p>
+                  Tula State University, faculty: information security (2018 -
+                  present)
+                </p>
+              </div>
+            </div>
+            <div
+              class="experience__english-level wow animate__animated animate__fadeInRight"
+              data-wow-offset="300"
+              data-wow-delay="0.8s"
+            >
+              <div class="skills__title">
+                <h3><i class="fas fa-graduation-cap"></i> English Level</h3>
+                <span class="bg__title without-stroke">English</span>
+              </div>
+              <div class="skills__text">
+                <p>Pre-Intermediate</p>
+                <p>
+                  I use English at my job, read documentation, write
+                  description, comment code :)
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end section Education -->
+        <!-- ********************************************** -->
+        <!-- start section Contacts -->
+        <section class="contacts" id="contacts">
+          <div
+            class="skills__title wow animate__animated animate__jackInTheBox center"
+            data-wow-offset="300"
+          >
+            <h3>Contacts</h3>
+            <span class="bg__title bg__title-center">Contacts</span>
+          </div>
+          <div class="contacts__variation">
+            <div class="contacts__left">
+              <div
+                class="contacts__block mail wow animate__animated animate__fadeInLeft"
+                data-wow-offset="0"
+                data-wow-delay="0.2s"
+              >
+                <div class="contacts__icon">
+                  <i class="fas fa-envelope-open"></i>
+                </div>
+                <div class="contacts__link">
+                  <a href="mailto:AimDragMan2@yandex.ru">
+                    <p class="contacts__link_grey">Mail me</p>
+                    <p>AimDragMan2@yandex.ru</p>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="contacts__block tel wow animate__animated animate__fadeInLeft"
+                data-wow-offset="0"
+                data-wow-delay="0.4s"
+              >
+                <div class="contacts__icon">
+                  <i class="fas fa-phone-square-alt"></i>
+                </div>
+                <div class="contacts__link">
+                  <a href="tel:+79632232137">
+                    <p class="contacts__link_grey">Call me</p>
+                    <p>8(963)-223-21-37</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__messangers">
+              <div
+                class="contacts__block telegram wow animate__animated animate__fadeInRight"
+                data-wow-offset="0"
+                data-wow-delay="0.6s"
+              >
+                <div class="contacts__icon">
+                  <i class="fab fa-telegram"></i>
+                </div>
+                <div class="contacts__link">
+                  <a href="https://t.me/Alcotras">
+                    <p class="contacts__link_grey">Message me</p>
+                    <p>@Alcotras</p>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="contacts__block discord wow animate__animated animate__fadeInRight"
+                data-wow-offset="0"
+                data-wow-delay="0.8s"
+              >
+                <div class="contacts__icon">
+                  <i class="fab fa-discord"></i>
+                </div>
+                <div class="contacts__link">
+                  <a href="#">
+                    <p class="contacts__link_grey">Watch at me</p>
+                    <p>Alcotras#2534</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end section Contacts -->
+      </main>
+    </div>
+
+    <script src="js/libs/wow.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
