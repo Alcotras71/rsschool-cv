@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 	new WOW().init();
 
-	if(window.matchMedia('(max-width: 768px)').matches){
+	if(window.matchMedia('(max-width: 1100px)').matches){
 		const fadeInRight = document.querySelectorAll('.animate__fadeInRight');
 
 		fadeInRight.forEach(elem => {

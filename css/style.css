@@ -89,6 +89,7 @@ h6 {
     rgba(17, 17, 17, 0.9) 40%,
     rgba(17, 17, 17, 1) 100%
   );
+  overflow: hidden;
 }
 
 .container {
@@ -124,23 +125,21 @@ h6 {
   left: -100px;
   font-size: 6vw;
   color: rgba(255, 180, 0, 0.1);
-  -webkit-text-stroke: 1px #111;
   line-height: 6.2vw;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
 }
-.bg__title.right {
-  left: auto;
-}
-.bg__title.center {
+.bg__title-center {
   left: 32%;
   right: auto;
 }
-.bg__title.without-stroke {
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+.bg__title-stroke {
+  -webkit-text-stroke: 1px #111;
 }
+
 /* !end GLOBAL */
 
-/*** Header ***/
-.header {
+/*** Aside ***/
+.aside {
   position: fixed;
   right: 30px;
   bottom: 0;
@@ -211,10 +210,7 @@ h6 {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-}
-
-/*** end Header ***/
+/*** end Aside ***/
 
 /*? About *****/
 .about,
@@ -364,6 +360,18 @@ h6 {
   background: #ffb400;
 }
 
+/* MEDIA QUERIES (max-width: 1440) */
+@media (max-width: 1440px) {
+  .bg__title {
+    left: auto;
+  }
+	.bg__title-center {
+		left: 35%;
+		right: auto;
+	}
+}
+
+
 /* MEDIA QUERIES (max-width: 1100) */
 @media (max-width: 1100px) {
   /* GLOBAL */
@@ -371,12 +379,15 @@ h6 {
     padding-left: 100px;
     padding-right: 100px;
   }
+	.aside {
+    display: none;
+  }
   .bg-block,
   .bg__title {
     display: none;
   }
 
-  /* HEADER */
+  /* Aside */
   .navbar__link h2 {
     background: #2b2a2a;
     font-size: 1.7vw;
@@ -391,7 +402,7 @@ h6 {
   .navbar__item > .navbar__link h2 {
     opacity: 1;
   }
-  /* END HEADER */
+  /* END Aside */
 
   /* ABOUT */
   .about {
@@ -458,35 +469,30 @@ h6 {
   }
 }
 
-@media (max-width: 950px) {
-  .header {
-    display: none;
-  }
-}
 /* MEDIA QUERIES (max-width: 768px) */
 @media (max-width: 768px) {
-	/* GLOBAL */
-	.container {
-		padding-left: 35px;
-		padding-right: 35px;
-	}
-	/* END GLOBAL */
-	.about__info {
+  /* GLOBAL */
+  .container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  /* END GLOBAL */
+  .about__info {
     font-size: 10vw;
-		line-height: 10vw;
+    line-height: 10vw;
   }
   .about__photo img {
-		margin-top: 20px;
+    margin-top: 20px;
     height: auto;
-		width: 85vw;
+    width: 85vw;
   }
   .about__age-gender {
     font-size: 8vw;
   }
   .about__summary {
     font-size: 5vw;
-		padding-right: 0;
-		margin-top: 30px;
+    padding-right: 0;
+    margin-top: 30px;
   }
   .summary__title {
     font-size: 8vw;
@@ -497,9 +503,9 @@ h6 {
   .education {
     margin-top: 30px;
   }
-	.skills{
-		margin-right: 0;
-	}
+  .skills {
+    margin-right: 0;
+  }
   .skills__code,
   .experience__work,
   .experience__schooling,
@@ -513,22 +519,22 @@ h6 {
   .skills__list {
     font-size: 5vw;
   }
+	.skills__text-hidden {
+		display: none;
+	}
   .skills__code-code {
-    font-size: 2.5vw;
-		border-radius: 10%;
-		margin-left: 0;
-		padding-left: 0;
+    display: none;
   }
   /* END EDUCATION */
 
   /* CONTACTS */
   .contacts {
     margin-top: 30px;
-		padding-bottom: 50px;
+    padding-bottom: 50px;
   }
-	.contacts__variation{
-		display: block;
-	}
+  .contacts__variation {
+    display: block;
+  }
   .contacts__icon {
     font-size: 8vw;
   }
@@ -538,7 +544,7 @@ h6 {
   .contacts__link_grey {
     font-size: 4vw;
   }
-	.contacts__block {
-		margin-top: 40px;
-	}
+  .contacts__block {
+    margin-top: 40px;
+  }
 }

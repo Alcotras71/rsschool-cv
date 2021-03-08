@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- start Header -->
-    <header class="header">
+    <!-- start Aside -->
+    <aside class="aside">
       <nav
         class="header__navbar navbar wow animate__animated animate__fadeInDown"
         data-wow-delay="1.1s"
@@ -42,8 +42,8 @@
           </li>
         </ul>
       </nav>
-    </header>
-    <!-- end Header -->
+    </aside>
+    <!-- end Aside -->
     <div class="wrapper">
       <main class="container">
         <div class="bg-block"></div>
@@ -60,16 +60,15 @@
               class="about__photo wow animate__animated animate__zoomIn"
               data-wow-delay=".3s"
             >
-              <img
-                alt="my_avatar"
-                src="https://sun9-61.userapi.com/impf/c830400/v830400269/132458/n7axDEe3mg0.jpg?size=720x960&quality=96&proxy=1&sign=29d85d4bc02ecbd936ea7e2793009bf0&type=album"
-              />
-            </div>
-            <div
-              class="about__age-gender wow animate__animated animate__fadeInUp"
-              data-wow-delay=".7s"
-            >
-              male, <span class="text-stroke">22</span>
+              <figure>
+                <img alt="my_avatar" src="img/avatar.jpg" />
+                <figcaption
+                  class="about__age-gender wow animate__animated animate__fadeInUp"
+                  data-wow-delay=".7s"
+                >
+                  male, <span class="text-stroke">22</span>
+                </figcaption>
+              </figure>
             </div>
           </div>
           <div
@@ -80,7 +79,7 @@
               <h2><i class="fas fa-bookmark"></i> Summary</h2>
               <span class="bg__title without-stroke">Summary</span>
             </div>
-            <p class="summary__text">
+            <article class="summary__text">
               Hi, my name is Andrey and I am a junior Frontend-developer in a
               small web studio. Always for HTML coding i use Gulp, Scss, Pug. On
               my work i have different tasks like work with cms Wordpress, to
@@ -89,7 +88,7 @@
               because I’m really love my job and that course is a chance to free
               boost my personal skills, to feel more fun and comfort with my
               job.
-            </p>
+            </article>
           </div>
         </section>
         <!-- end section About -->
@@ -105,7 +104,7 @@
                 <h3 class="text-stroke gold">
                   <i class="fas fa-cogs"></i> Technical Skills
                 </h3>
-                <span class="bg__title">Technical</span>
+                <span class="bg__title bg__title-stroke">Technical</span>
               </div>
               <ul class="skills__list">
                 <li>HTML5, CSS3, JavaScript, some PHP7</li>
@@ -128,7 +127,7 @@
                 <h3 class="text-stroke gold">
                   <i class="fas fa-code"></i> Code examples
                 </h3>
-                <span class="bg__title">Code</span>
+                <span class="bg__title bg__title-stroke">Code</span>
               </div>
               <div class="skills__text">
                 <p>
@@ -137,9 +136,11 @@
                     >https://github.com/Alcotras71</a
                   >
                 </p>
-                <p>small validation module on native JS</p>
+                <p class="skills__text-hidden">
+                  small validation module on native JS
+                </p>
               </div>
-              <div
+              <article
                 class="skills__code-code wow animate__animated animate__bounceIn"
                 data-wow-offset="300"
                 data-wow-delay=".8s"
@@ -162,7 +163,7 @@ const checkTextInputs = (selector) => {
 export default checkTextInputs;
 									</code>
 								</pre>
-              </div>
+              </article>
             </div>
           </div>
           <div class="education__experience experience">
@@ -172,7 +173,7 @@ export default checkTextInputs;
             >
               <div class="skills__title">
                 <h3><i class="fas fa-business-time"></i> Work Experience</h3>
-                <span class="bg__title right">Work</span>
+                <span class="bg__title">Work</span>
               </div>
               <div class="skills__text">
                 <p>December 2020 - present</p>
@@ -186,7 +187,7 @@ export default checkTextInputs;
             >
               <div class="skills__title">
                 <h3><i class="fas fa-book-reader"></i> Education</h3>
-                <span class="bg__title right">Education</span>
+                <span class="bg__title">Education</span>
               </div>
               <div class="skills__text">
                 <p>
@@ -206,7 +207,7 @@ export default checkTextInputs;
             >
               <div class="skills__title">
                 <h3><i class="fas fa-graduation-cap"></i> English Level</h3>
-                <span class="bg__title right without-stroke">English</span>
+                <span class="bg__title without-stroke">English</span>
               </div>
               <div class="skills__text">
                 <p>Pre-Intermediate</p>
@@ -227,13 +228,13 @@ export default checkTextInputs;
             data-wow-offset="300"
           >
             <h3>Contacts</h3>
-            <span class="bg__title center">Contacts</span>
+            <span class="bg__title bg__title-center">Contacts</span>
           </div>
           <div class="contacts__variation">
             <div class="contacts__left">
               <div
                 class="contacts__block mail wow animate__animated animate__fadeInLeft"
-                data-wow-offset="200"
+                data-wow-offset="0"
                 data-wow-delay="0.2s"
               >
                 <div class="contacts__icon">
@@ -248,7 +249,7 @@ export default checkTextInputs;
               </div>
               <div
                 class="contacts__block tel wow animate__animated animate__fadeInLeft"
-                data-wow-offset="200"
+                data-wow-offset="0"
                 data-wow-delay="0.4s"
               >
                 <div class="contacts__icon">
